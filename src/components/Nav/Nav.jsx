@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "../../assets/logo.png";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,11 +8,19 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
+  //small screen menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <nav className="bg-transpernt text-black p-4 me-3 ms-3 ps-8 pe-8">
       <div className="container mx-auto flex justify-between items-center">
@@ -23,22 +32,32 @@ const Nav = () => {
         {/* Links for large screens */}
         <div className="hidden md:flex space-x-6">
           <a href="#" className="hover:text-[var(--main)]">
-            Home
+            {t("homeNav")}
           </a>
 
           <a href="#" className="hover:text-[var(--main)]">
-            About
+            {t("aboutUsNav")}
           </a>
           <a href="#" className="hover:text-[var(--main)]">
-            Contact
+            {t("courseNav")}
+          </a>
+          <a href="#" className="hover:text-[var(--main)]">
+            {t("shopNav")}
           </a>
           <div className="relative group">
-            <button className="hover:text-[var(--main)]">
-              Arabic <FontAwesomeIcon icon={faChevronDown} />
+            <button
+              className="hover:text-[var(--main)]"
+              onClick={() => changeLanguage("en")}
+            >
+              English <FontAwesomeIcon icon={faChevronDown} />
             </button>
             <div className="absolute hidden group-hover:block bg-gray-800 text-white py-2 mt-1 rounded shadow-lg">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                English
+              <a
+                href="#"
+                className="block px-4 py-2 hover:bg-gray-700"
+                onClick={() => changeLanguage("ar")}
+              >
+                Arabic
               </a>
             </div>
           </div>
@@ -55,7 +74,7 @@ const Nav = () => {
             className="text-[var(--main)]"
           />
           <a href="#" className="text-[var(--main)] login-btn">
-            Login
+            {t("login")}
           </a>
         </div>
 

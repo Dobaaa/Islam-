@@ -35,6 +35,7 @@ const Advace = () => {
       </div>
       <div className="Advace-video w-[100%] relative  flex justify-center pe-4 ps-4">
         <video
+          controls
           src={Video}
           muted
           autoPlay={true}
