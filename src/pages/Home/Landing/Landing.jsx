@@ -10,8 +10,8 @@ const Landing = () => {
   return (
     <>
       <div className="Landing-parent  flex justify-center ">
-        <div className="contianer w-100 flex items-center flex-col lg:flex-row lg:items-start justify-center  gap-20 pt-5 pe-5 ps-8">
-          <div className="land-text flex-1 text-center lg:text-start ">
+        <div className="contianer w-100 flex items-center flex-col lg:flex-row lg:items-start justify-center   gap-20 pt-5 pe-5 ps-8">
+          <div className="land-text flex-1 flex flex-col text-center items-center   lg:items-start  lg:text-start ">
             <h1>
               Learn your <br /> Deen to safeguard your hereafter
             </h1>
@@ -36,14 +36,18 @@ const Landing = () => {
             <img
               src={LandingImg}
               alt=""
-              className="rounded-md mt-8 w-[300px]"
+              className="rounded-md mt-8 w-[280px]"
             />
-            <img src={LandingDesignImg} alt="" className="LandingBackground" />
+            <img
+              src={LandingDesignImg}
+              alt=""
+              className="LandingBackground max-w-[450px]"
+            />
           </div>
         </div>
       </div>
       <div className="categories pt-3 pb-5 ">
-        <div className="cate-head flex  justify-evenly pt-3 pb-3 ">
+        <div className="cate-head flex  justify-evenly p-4">
           <h4 className="font-bold ">
             Choose your desired topic to learn from top category
           </h4>

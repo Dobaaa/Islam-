@@ -72,11 +72,11 @@ const Card = () => {
   });
 
   return (
-    <div className="flex flex-col items-center pt-12 ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5 ps-4 pe-4">
+    <div className="flex flex-col items-center  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5 ps-4 pe-4 ">
         {CardDetails}
       </div>
-      <div className=" pagination-container flex justify-center ">
+      <div className=" pagination-container flex justify-center text-center relative ">
         <ReactPaginate
           previousLabel={"previous"}
           nextLabel={"next"}
@@ -85,7 +85,7 @@ const Card = () => {
           marginPagesDisplayed={2}
           pageRangeDisplayed={3}
           onPageChange={handlePageClick}
-          containerClassName={"pagination pt-8  "}
+          containerClassName={"pagination pt-5  "}
           activeClassName={"active"}
         />
       </div>

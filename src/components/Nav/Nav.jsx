@@ -103,29 +103,23 @@ const Nav = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-            Home
+            {t("homeNav")}
           </a>
           <div className="relative group">
             <button className="block px-4 py-2 hover:bg-gray-700">
-              Services
+              English
             </button>
             <div className="bg-gray-800 text-white py-2 rounded shadow-lg">
               <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                Service 1
-              </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                Service 2
-              </a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-                Service 3
+                Arabic
               </a>
             </div>
           </div>
           <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-            About
+            {t("aboutUsNav")}
           </a>
           <a href="#" className="block px-4 py-2 hover:bg-gray-700">
-            Contact
+            {t("courseNav")}
           </a>
           <a href="#" className="block px-4 py-2 hover:bg-gray-700">
             Login

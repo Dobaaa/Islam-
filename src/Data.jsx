@@ -85,3 +85,25 @@ export const Data = [
     price: "$Free",
   },
 ];
+export const InfoData = [
+  {
+    id: 1,
+    blog1:
+      "Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has beenthe industry's standard dummy text ever sincethe 1500s,",
+  },
+  {
+    id: 2,
+    blog1:
+      "Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has beenthe industry's standard dummy text ever sincethe 1500s,",
+  },
+  {
+    id: 3,
+    blog1:
+      "Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has beenthe industry's standard dummy text ever sincethe 1500s,",
+  },
+  {
+    id: 4,
+    blog1:
+      "Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has beenthe industry's standard dummy text ever sincethe 1500s,",
+  },
+];

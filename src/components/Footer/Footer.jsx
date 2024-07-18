@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="fotter-links flex gap-6">
+        <div className="fotter-links flex gap-12 p-5 lg:gap-6">
           <ul>
             <li className="font-bold  mb-4">Support</li>
             <li className="mb-3 cursor-pointer">Help Center</li>
